@@ -1,34 +1,61 @@
 body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #f4f6f8;
-	color: #333;
-	margin: 0;
-	padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 40px;
+  position: relative;
 }
 
 h1 {
-	text-align: center;
-	color: #004080;
-	margin-bottom: 30px;
+  text-align: center;
+  color: #004080;
+  margin-bottom: 30px;
 }
 
 ul {
-	max-width: 500px;
-	margin: 0 auto;
-	background: white;
-	padding: 20px 40px;
-	border-radius: 12px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	list-style-type: square;
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: square;
 }
 
 li {
-	margin: 10px 0;
-	font-size: 1.1em;
-	transition: transform 0.2s ease, color 0.2s ease;
+  margin: 10px 0;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 li:hover {
-	color: #0066cc;
-	transform: translateX(5px);
+  color: #0066cc;
+  transform: translateX(5px);
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #004080;
+  transition: opacity 0.3s ease;
+}
+
+/* Imagen en una esquina */
+.corner-image {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.corner-image:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
